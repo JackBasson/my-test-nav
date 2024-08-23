@@ -1,4 +1,3 @@
-
 /* General Reset */
 * {
     margin: 0;
@@ -16,15 +15,20 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+.navbar-logo:hover ~ .navbar-links {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.5s, opacity 0.5s;
+}
+
 .navbar-logo a {
     color: var(--titlecolor);
     font-size: 1.5rem;
     font-weight: bold;
     text-decoration: none;
     text-transform: uppercase;
-    font-family: var(--navtitlefont)
+    font-family: var(--navtitlefont);
 }
-
 
 .navbar-links {
     list-style: none;
@@ -43,29 +47,14 @@
     padding: 0.5rem 1rem;
     border-radius: 25px;
     transition: all 1s ease;
-    font-family: var(--navlinksfont)
+    font-family: var(--navlinksfont);
 }
-
 
 /* Link Hover Effects */
 .navbar-links a:hover {
     background: rgba(13, 27, 84, 0.2);
     color: #ffffff;
 }
-
-/* Fancy Underline Effect */
-/* .navbar-links a::before {
-    content: '';
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-    width: 100%;
-    height: 3px;
-    background-color: #fff;
-    transform: scaleX(0);
-    transform-origin: right;
-    transition: transform 0.3s ease;
-} */
 
 .navbar-links a:hover::before {
     transform: scaleX(1);
