@@ -13,6 +13,8 @@
     padding: 1rem 2rem;
     background: linear-gradient(90deg, var(--primary), var(--secondary), var(--primary));
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 10px 10px 10px 10px;
+    border-radius: 10px;
 }
 
 .navbar-logo:hover ~ .navbar-links {
