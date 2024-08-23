@@ -38,6 +38,8 @@
 
 .navbar-links li {
     position: relative;
+    opacity: 1;
+    transition: opacity 0.5s ease;
 }
 
 .navbar-links a {
